@@ -1,5 +1,3 @@
-// functions/index.js
-
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
@@ -19,4 +17,4 @@ app.use("/api/stripe", stripeController);
 
 // Export Firebase Function
 exports.api = functions.https.onRequest(app);
-// Firebase Cloud Function entry point
+
